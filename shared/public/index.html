@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versión en js</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">✨ Este sitio sirve para poder cambiar el color y el fondo del texto ✨</h2>
+        
+        <div class="input-group">
+            <input type="text" id="textInput" class="floating-input" placeholder=" ">
+            <label for="textInput" class="floating-label">Escribe tu mensaje</label>
+        </div>
+
+        <button id="colorButton" class="magic-button">
+            <span class="button-text">Cambiar colores</span>
+            <div class="hover-effect"></div>
+        </button>
+        <p class="footer">Presiona Enter para mostrar pop up</p>
+    </div>
+
+    <div id="customModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
